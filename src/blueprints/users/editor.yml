@@ -1,0 +1,75 @@
+title: Editor
+description:  
+  en: The client can edit all pages
+  de: Der Kunde kann alle Seiten bearbeiten
+image:
+  back: blue-200
+  icon: edit
+
+home: /panel/pages/home
+
+permissions:
+  access:
+    panel: true
+    users: false
+    site: true
+    settings: false
+    languages: false
+    system: false
+
+  languages:
+    create: false
+    delete: false
+
+  users:
+    changeEmail: false
+    changeLanguage: true
+    changeName: false
+    changePassword: false
+    changeRole: false
+    create: false
+    delete: false
+    update: false
+
+  user:
+    changeEmail: false
+    changeLanguage: true
+    changeName: true
+    changePassword: false
+    changeRole: false
+    create: false
+    delete: false
+    update: true
+    
+  files:
+    changeName: true
+    create: true
+    delete: false
+    replace: true
+    update: true
+
+  site:
+    update: false
+    changeTitle: false
+
+  pages:
+    read: true
+    sort: true
+    changeSlug: false
+    changeStatus: true
+    changeTemplate: false
+    changeTitle: true
+    create: false
+    delete: false
+    update: true
+    duplicate: false
+    preview: false
+
+
+fields:
+  tel: 
+    label:
+      en: Phone
+      de: Telefon
+    type: tel
+    width: 1/2
