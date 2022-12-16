@@ -3,7 +3,7 @@
 use Kirby\Toolkit\Html;
 
  if ($logo = $data->contact()->toObject()->logo()->toFile()) : ?>
-    <a href="<?= option('toolbox.siteurl'); ?>">
+    <a href="<?= option('toolbox.siteurl'); ?>" class="site-logo">
         <?php if ($logo->extension() == 'svg') : ?>
             <?= svg($logo) ?>
         <?php else : ?>
