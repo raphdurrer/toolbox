@@ -7,6 +7,7 @@ Kirby::plugin('raphdurrer/toolbox', [
         'sections/socialmedia' => __DIR__. '/src/blueprints/sections/socialmedia.yml'
     ],
     'snippets' =>[
+        'address' => __DIR__. '/src/snippets/address.php',
         'socialmedia' => __DIR__. '/src/snippets/socialmedia.php'
     ],
 ]);
