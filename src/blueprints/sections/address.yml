@@ -1,0 +1,27 @@
+name: address
+type: fields
+fields:
+  location:
+    label: Adresse
+    type: object
+    fields:
+      logo:
+        type: files
+        uploads: logoimage
+        multiple: false
+      name: 
+        type: text
+      address:
+        type: text
+      plz:
+        type: number
+        min: 1000
+        max: 9999
+      place:
+        type: text
+      email:
+        type: email
+      tel:
+        type: tel
+      website:
+        type: url

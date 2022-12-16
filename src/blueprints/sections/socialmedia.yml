@@ -1,0 +1,23 @@
+name: Socialmedia
+type: fields
+fields:
+  socialmedias:
+    Label: Socialmedia Links
+    type: structure
+    columns:
+      idslug:
+        width: 1/4
+      platform:
+    fields:
+      platform:
+        label: Socialmedia Plattform
+        type: select
+        options:
+          type: api
+          url: "{{ site.url }}/customdata/config.json"
+          query: Socialmedia.sortBy("name", "asc")
+          text: "{{ item.name }}"
+          value: "{{ item.url }}"
+      idslug:
+        label: ID
+        type: text
