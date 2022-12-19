@@ -2,10 +2,11 @@
 
 Kirby::plugin('raphdurrer/toolbox', [
     'options' => [
-        'siteurl' => site()->url()
+        'siteUrl' => site()->url(),
     ],
     'blueprints' => [
         'tabs/menu' => __DIR__ . '/src/blueprints/tabs/menu.yml',
+        'sections/pagecontent' => __DIR__ . '/src/blueprints/sections/pagecontent.yml',
         'sections/address' => __DIR__ . '/src/blueprints/sections/address.yml',
         'sections/socialmedia' => __DIR__ . '/src/blueprints/sections/socialmedia.yml',
         'files/logoimage' => __DIR__ . '/src/blueprints/files/logoimage.yml',
@@ -14,6 +15,7 @@ Kirby::plugin('raphdurrer/toolbox', [
     'snippets' => [
         'logo' => __DIR__ . '/src/snippets/logo.php',
         'mainmenu' => __DIR__ . '/src/snippets/mainmenu.php',
+        'pagecontent' => __DIR__ . '/src/snippets/pagecontent.php',
         'address' => __DIR__ . '/src/snippets/address.php',
         'socialmedia' => __DIR__ . '/src/snippets/socialmedia.php'
     ],

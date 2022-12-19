@@ -1,0 +1,68 @@
+name: pagecontent
+type: fields
+fields:
+  layout:
+    label:
+      en: Pagecontent
+      de: Seiteninhalt
+    type: layout
+    layouts:
+      - "12/12"
+      - "6/12, 6/12"
+      - "4/12, 4/12, 4/12"
+      - "3/12, 3/12, 3/12, 3/12"
+      - "4/12, 8/12"
+      - "8/12, 4/12"
+
+    fieldsets:
+      - heading
+      - text
+      - image
+      - video
+
+    settings:
+      fields:
+        layoutProperties:
+          label:
+            en: Layout Properties
+            de: Layout Eigenschaften
+          type: object
+          default: 
+            layoutBlockStart: 16
+            layoutBlockEnd: 16
+            layoutclasses: grid
+          fields:
+            layoutBlockStart:
+              label: Abstand oben
+              type: range
+              after: "px"
+              default: 16
+              step: 16
+              min: 16
+              max: 112
+              width: 1/2
+            layoutBlockEnd:
+              label: Abstand Unten
+              type: range
+              after: "px"
+              default: 16
+              step: 16
+              min: 16
+              max: 112
+              width: 1/2
+            layoutid:
+              label: id
+              type: text
+              maxlength: 10
+              width: 2/6
+            layoutclasses:
+              label: class
+              max: 3
+              width: 4/6
+              type: multiselect
+              options:
+                type: api
+                url: "site/plugins/toolbox/assets/jsonData/cssClasses.json"
+                query: LayoutClasses
+                text: "{{ item.name }}"
+                value: "{{ item.value }}"
