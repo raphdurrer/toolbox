@@ -1,0 +1,12 @@
+{
+    "LayoutClasses": [
+        {
+            "name": "Grid",
+            "value": "grid"
+        },
+        {
+            "name": "Volle Breite",
+            "value": "w-full"
+        }
+    ]
+}
