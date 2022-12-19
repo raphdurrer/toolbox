@@ -16,5 +16,11 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {},
+    "config": {
+        "optimize-autoloader": true
+    },
+    "extra": {
+        "installer-name": "Kirby-Toolbox"
+    }
 }
