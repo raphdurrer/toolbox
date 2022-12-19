@@ -1,0 +1,19 @@
+{
+    "name": "raphdurrer/toolbox",
+    "description": "Toolbox for Kirby 3 with Snippets, Blueprints, etc.",
+    "type": "kirby-plugin",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Raphdurrer\\Toolbox\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Raphael",
+            "email": "raphael@docono.io"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

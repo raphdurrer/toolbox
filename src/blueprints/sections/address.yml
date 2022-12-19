@@ -1,7 +1,7 @@
 name: address
 type: fields
 fields:
-  location:
+  contact:
     label: Adresse
     type: object
     fields:

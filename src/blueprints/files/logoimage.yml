@@ -1,0 +1,8 @@
+title: Logo
+image: 
+  icon: image
+  back: white
+extensions: .png, .svg
+accept:
+    mime: image/png, image/svg+xml
+    type: image
