@@ -3,6 +3,13 @@
     "description": "Toolbox for Kirby 3 with Snippets, Blueprints, etc.",
     "type": "kirby-plugin",
     "license": "MIT",
+    "version": "1.0.8",
+    "keywords": [
+        "kirby3",
+        "kirby3-cms",
+        "kirby3-plugin",
+        "toolbox"
+    ],
     "autoload": {
         "psr-4": {
             "Raphdurrer\\Toolbox\\": "src/"
