@@ -27,7 +27,7 @@ fields:
             en: Layout Properties
             de: Layout Eigenschaften
           type: object
-          default: 
+          default:
             layoutBlockStart: 16
             layoutBlockEnd: 16
             layoutclasses: grid
@@ -62,7 +62,36 @@ fields:
               type: multiselect
               options:
                 type: api
-                url: "site/plugins/toolbox/assets/jsonData/cssClasses.json"
+                url: "{{ kirby.option('raphdurrer.toolbox.jsonDir')}}/cssClasses.json"
                 query: LayoutClasses
                 text: "{{ item.name }}"
                 value: "{{ item.value }}"
+
+        gridProperties:
+          label: 
+            en: Grid Properties
+            de: Grid Einstellungen
+          type: object
+          default:
+           colcount: 12
+           gridgap: 16
+          fields:
+            colcount:
+              label: 
+                en: Columns
+                de: Spalten
+              type: number
+              default: 12
+              max: 24
+              width: 1/6
+            gridgap:
+              label:
+                en: Grid gutter
+                de: Raster Abstand
+              type: range
+              after: "px"
+              default: 16
+              step: 16
+              min: 16
+              max: 112
+              width: 5/6
