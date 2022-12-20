@@ -1,8 +1,12 @@
 <?php
 
+use Kirby\Cms\Url;
+
 Kirby::plugin('raphdurrer/toolbox', [
     'options' => [
-        'siteUrl' => site()->url(),
+        'siteUrl' => Url::home(),
+        'jsonDir' => __DIR__ . '/assets/jsonData',
+
     ],
     'blueprints' => [
         'tabs/menu' => __DIR__ . '/src/blueprints/tabs/menu.yml',
