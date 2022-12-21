@@ -10,10 +10,14 @@ Kirby::plugin('raphdurrer/toolbox', [
     ],
     'blueprints' => [
         'tabs/menu' => __DIR__ . '/src/blueprints/tabs/menu.yml',
+        'tabs/seo' => __DIR__ . '/src/blueprints/tabs/seo.yml',
+
         'sections/pagecontent' => __DIR__ . '/src/blueprints/sections/pagecontent.yml',
         'sections/address' => __DIR__ . '/src/blueprints/sections/address.yml',
         'sections/socialmedia' => __DIR__ . '/src/blueprints/sections/socialmedia.yml',
+
         'files/logoimage' => __DIR__ . '/src/blueprints/files/logoimage.yml',
+
         'users/editor' => __DIR__ . '/src/blueprints/users/editor.yml'
     ],
     'snippets' => [

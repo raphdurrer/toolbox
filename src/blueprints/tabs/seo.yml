@@ -1,0 +1,36 @@
+title: SEO
+icon: globe
+columns:
+  - width: 1/3
+    fields:
+      favicon:
+        type: files
+        multiple: false
+      ogimage:
+        type: files
+        multiple: false
+
+  - width: 2/3
+    fields:
+      meta:
+        label:
+          en: META Tags
+          de: META Befehle
+        type: object
+        fields:
+          metatitle:
+            label:
+              en: META Title
+              de: META Titel
+            type: text
+            default: site.title
+            minlength: 50
+            maxlength: 60
+          metadescription:
+            label:
+              en: META description
+              de: META Beschreibung
+            type: textarea
+            buttons: false
+            minlength: 50
+            maxlength: 160
