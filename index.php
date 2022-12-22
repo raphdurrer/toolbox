@@ -10,6 +10,7 @@ Kirby::plugin('raphdurrer/toolbox', [
     ],
     'blueprints' => [
         'tabs/menu' => __DIR__ . '/src/blueprints/tabs/menu.yml',
+        'tabs/pagefiles' => __DIR__ . '/src/blueprints/tabs/pagefiles.yml',
         'tabs/seo' => __DIR__ . '/src/blueprints/tabs/seo.yml',
 
         'sections/pagecontent' => __DIR__ . '/src/blueprints/sections/pagecontent.yml',
